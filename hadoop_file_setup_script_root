@@ -1,0 +1,46 @@
+#!/bin/bash
+
+yum install python36 -y
+yum install python3-pip -y
+
+pip3 install gdown
+gdown --id 17UWQNVdBdGlyualwWX4Cc96KyZhD-lxz
+gdown --id 1541gbFeGZZJ5k9Qx65D04lpeNBw87rM5
+
+if ls -a | grep basic_hadoop_cmd
+then
+chmod +x basic_hadoop_cmd
+else
+chmod +x  /home/ec2-user/basic_hadoop_cmd
+cp /home/ec2-user/basic_hadoop_cmd  /root/basic_hadoop_cmd
+
+source basic_hadoop_cmd
+fi
+
+
+
+echo " ...."
+echo " ...."
+echo " ...."
+echo " =======   Your files are downloaded successfully ======"
+echo " ...."
+echo " ...."
+echo " ...."
+echo " ====== Now we are installing packages ========"
+
+echo " ...."
+echo " ...."
+echo " ...."
+rpm -ivh jdk-8u171-linux-x64.rpm
+rpm -ivh  hadoop-1.2.1-1.x86_64.rpm --force
+
+
+echo " ...."
+echo " ...."
+echo " ...."
+echo " ======= packages successfully installed ======"
+echo " ======= Hadoop successfully setup, now configure it  ======"
+echo " ======= Run : source basic_hadoop_cmd ==================="
+echo " ...."
+echo " ...."
+echo " ...."

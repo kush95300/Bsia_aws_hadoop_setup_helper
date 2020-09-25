@@ -1,0 +1,8 @@
+alias cls='clear' 
+alias hrep='hadoop dfsadmin -report'
+alias hformat='hadoop namenode -format'
+alias hstart='hadoop-daemon start '
+alias hstop='hadoop-daemon stop '
+alias hput='hadoop fs -put '
+alias hadfs='hadoop fs '
+

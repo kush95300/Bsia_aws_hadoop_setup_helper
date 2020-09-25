@@ -1,0 +1,21 @@
+#!/bin/bash
+
+chmod +x hadoop_file_setup_script_root
+
+if whoami | grep root
+then 
+echo "Already root access"
+else
+echo "..."
+echo "..."
+echo ".............. Now Enter command /home/ec2-user/hadoop_file_setup_script_root........"
+echo "..."
+echo "..."
+sudo su - root
+fi
+
+sudo cp /home/ec2-user/test /root/
+
+
+
+
