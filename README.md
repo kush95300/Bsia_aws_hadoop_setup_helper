@@ -3,6 +3,7 @@
 This repository is created to creatre haddop over ec2 instannce easily. This is created to help those guys who want to test ghadoop over aws cloud without spending their resources. 
 
 I will explain step by step process to use these script.
+( by using this script you can create hadoop with just spending 10 mb internet data )
 
 # Steps :
 
